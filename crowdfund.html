@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" href="assets/img/SVG files/FACT0RN_SNOWDRIFT_SOLLID_FILLED.svg">
+
+        <!--=============== REMIXICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5046334ade.js" crossorigin="anonymous"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>FACT0RN: A New Challenge</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header">
+            <nav class="nav container">
+                <div class="nav__data">
+                    <a href="index.html" class="nav__logo">
+                        <img src="assets/img/SVG files/FACT0RN_SNOWDRIFT_SOLLID_FILLED.svg" style="width: 45px;"> &nbsp FACT0RN
+                    </a>
+    
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line nav__toggle-menu"></i>
+                        <i class="ri-close-line nav__toggle-close"></i>
+                    </div>
+                </div>
+
+                <!--=============== NAV MENU ===============-->
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li>
+                            <a href="https://docs.fact0rn.io/" class="nav__link" target="_blank">Docs</a>
+                        </li>
+
+                        <li>
+                            <a href="roadmap.html" class="nav__link">Roadmap</a>
+                        </li>
+
+                        <!--=============== DROPDOWN 1 ===============-->
+                        <li class="dropdown__item">                      
+                            <div class="nav__link dropdown__button">
+                                Discover <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-brands fa-wpexplorer fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Explorer</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://factexplorer.io/" class="dropdown__link" target=”_blank”>Block explorer</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://explorer.fact0rn.io/" class="dropdown__link" target=”_blank”>Wallet explorer</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://explorer.fact0rn.io/info" class="dropdown__link" target=”_blank”>APIs</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-solid fa-people-group fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Crowdfund</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="crowdfund.html" class="dropdown__link">Donation Reserve Wallet</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-regular fa-rectangle-list fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Listings</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="exchanges.html" class="dropdown__link">Exchanges</a>
+                                            </li>
+                                            <li>
+                                                <a href="directories.html" class="dropdown__link">Directories</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-solid fa-hashtag fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Media kit</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="media_kit.html" class="dropdown__link">Logo & color palette</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 2 ===============-->
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Resources <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-solid fa-wallet fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Wallet</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/wallet/command-line-wallet" class="dropdown__link" target=”_blank”>Command Line Wallet</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/wallet/graphical-user-interface-wallet-factwallet" class="dropdown__link" target=”_blank”>Graphical User Interface - FACTWallet</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-regular fa-square fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Miner</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/mining/factoring-docker-mining" class="dropdown__link" target=”_blank”>Factoring (Docker Mining)</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/mining/integerdispersion" class="dropdown__link" target=”_blank”>IntegerDispersion</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/mining/gpudispersion" class="dropdown__link" target=”_blank”>GPUDispersion</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+    
+                                </div>
+                            </div>
+                        </li>
+
+                        <!--=============== DROPDOWN 3 ===============-->
+                        <li class="dropdown__item">                        
+                            <div class="nav__link dropdown__button">
+                                Publications <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-brands fa-x-twitter fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Twitter</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://x.com/FACT0RN?s=20" class="dropdown__link" target=”_blank”>Fact0rn</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://x.com/LionesEscanor?s=20" class="dropdown__link" target=”_blank”>Liones Escanor</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://x.com/BlauerOktober?s=20" class="dropdown__link" target=”_blank”>BlauerOktober</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-solid fa-c fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Coinbase</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://www.coinbase.com/blog/fact0rn-blockchain-integer-factorization-as-proof-of-work-pow" class="dropdown__link" target=”_blank”>Concept of Fact0rn</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.coinbase.com/blog/announcing-our-second-developer-grant-winners" class="dropdown__link" target=”_blank”>Grant winner of the Crypto Cummunity Fund</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="fa-solid fa-book fa-2xl"></i>
+                                        </div>
+    
+                                        <span class="dropdown__title">Docs</span>
+    
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/introduction/concept-of-fact0rn" class="dropdown__link" target=”_blank”>Concept of FACT0RN!</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/introduction/why-use-integer-factorization-to-secure-fact0rn" class="dropdown__link" target=”_blank”>Why use integer factorization to secure FACT0RN?</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/introduction/usdfact-tokenomics" class="dropdown__link" target=”_blank”>$FACT tokenomics</a>
+                                            </li>
+                                            <li>
+                                                <a href="https://docs.fact0rn.io/introduction/fact0rn-the-future-of-proof-of-work-and-you" class="dropdown__link" target=”_blank”>FACT0RN, the future of Proof of Work, and you!</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="crowdfund">
+                <div  class="banner-support banner">
+                    Donation Reserve
+                </div>
+                <div  class="banner-note banner">
+                    These are the Community Donation Reserve Wallets and will be used to cover the cost for listings, marketing and more! 
+                </div>
+            </section>
+            <section class="grid-center rahmen">
+                <div class="grid-container grid-container--fill">
+                    <div class="grid-element">
+                            <p><h1>Wallet Information</h1></p>
+                            <p><b>Wallet 1:</b> $FACT (FACT0RN Network)</p>
+                            <p><b>Wallet 2:</b> $USDT (Tron Network)</p>
+                            <p><b>Wallet 3:</b> $USDT (Ethereum Network)</p>
+                    </div>
+                    <div class="grid-element">
+                        <div class="progress-container">
+                            <h2>Wallet 1 - $FACT</h2>
+                            <div class="progress-bar" id="PROGRESSBAR_WALLET1">
+                              <div class="progress-bar-inner" id="PROGRESSBAR_INNER_WALLET1"></div>
+                            </div>
+                            <p id="PERCENTAGE_WALLET1"></p>
+                            <p id="DONATED_AMOUNT_WALLET1"></p>
+                        </div>
+                        <div class="grid-element-text">
+                            <img src="assets/img/QR_FACT_FACT0RN.svg" style="border-radius: 16px;">
+                        </div>
+                        <div class="grid-element-text">
+                            <a href="https://explorer.fact0rn.io/address/fact1qm3nvrxdj0v8v0ecchjprvkt72tja3fvj6vu2hm" target="_blank">Open</a>
+                        </div>
+                    </div>
+                    <div class="grid-element">
+                        <div class="progress-container">
+                            <h2>Wallet 2 - $USDT</h2>
+                            <div class="progress-bar" id="PROGRESSBAR_WALLET2">
+                              <div class="progress-bar-inner" id="PROGRESSBAR_INNER_WALLET2"></div>
+                            </div>
+                            <p id="PERCENTAGE_WALLET2"></p>
+                            <p id="DONATED_AMOUNT_WALLET2"></p>
+                        </div>
+                        <div class="grid-element-text">
+                            <img src="assets/img/QR_USDT_TRON.svg" style="border-radius: 16px;">
+                        </div>
+                        <div class="grid-element-text">
+                            <a href="https://tronscan.org/#/address/TSeMpubcvgaQtxZJyaUjKVjEVRK9CqxwJW" target="_blank">Open</a>
+                        </div>
+                    </div>
+                    <div class="grid-element">
+                        <div class="progress-container">
+                            <h2>Wallet 3 - $USDT</h2>
+                            <div class="progress-bar" id="PROGRESSBAR_WALLET3">
+                              <div class="progress-bar-inner" id="PROGRESSBAR_INNER_WALLET3"></div>
+                            </div>
+                            <p id="PERCENTAGE_WALLET3"></p>
+                            <p id="DONATED_AMOUNT_WALLET3"></p>
+                        </div>
+                        <div class="grid-element-text">
+                            <img src="assets/img/QR_USDT_ETHEREUM.svg" style="border-radius: 16px;">
+                        </div>
+                        <div class="grid-element-text">
+                            <a href="https://etherscan.io/address/0x58f30F0CD525D5C50b70cF84AE8a000C6c6c9cf2" target="_blank">Open</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer">
+            <div class="row">
+            <a href="https://github.com/FACT0RN"><i class="fa-brands fa-github"></i></a>
+            <a href="https://discord.gg/UcPqtzb9"><i class="fa-brands fa-discord"></i></i></a>
+            <a href="https://www.reddit.com/r/FACT0RN/"><i class="fa-brands fa-reddit"></i></a>
+            <a href="https://x.com/FACT0RN?s=20"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            
+            <div class="row">
+              Copyright &copy; fact0rn.io - All rights reserved
+            </div>
+            </div>
+        </footer>
+        
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    </body>
+</html>
